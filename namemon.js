@@ -17,13 +17,13 @@ function saveProgress(thing) {
   }
   if (savie|| thing === "credits") {
       save.namesCollected = namesCollected;
-    localStorage.setItem("saves2", JSON.stringify(save));
+    localStorage.setItem("saves3", JSON.stringify(save));
   }
 }
 function loadSave() {
   var savie = confirm("Are you sure you want to load?");
   if (savie) {
-    const load = JSON.parse(localStorage.getItem("saves2"));
+    const load = JSON.parse(localStorage.getItem("saves3"));
     if (!load) return;
 
     for (let x in load) {
